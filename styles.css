@@ -1,0 +1,137 @@
+w * {
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	background-color: #f1f1f1;
+}
+.titsuperior {
+	background-color: #bda5bd;
+	font-size: 30px;
+	text-align: center;
+}
+.titsuperior h1 {
+	margin: 10px;
+}
+.bnavegacion {
+	overflow: hidden;
+	background-color: #410042;
+}
+.bnavegacion a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 16px;
+}
+.submenu {
+	float: left;
+	overflow: hidden;
+}
+.submenu .btnsubmenu {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+.bnavegacion a:hover, .submenu:hover .btnsubmenu {
+	background-color: #00c2ff;
+}
+.contsubmenu {
+	display: none;
+	position: absolute;
+	left: 0;
+	background-color: #410042;
+	width: 100%;
+	z-index: 1;
+}
+.contsubmenu a {
+	float: left;
+	color: white;
+	text-decoration: none;
+}
+.contsubmenu a:hover {
+	background-color: #00c2ff;
+}
+.submenu:hover .contsubmenu {
+	display: block;
+}
+.bnavegacion .buscador {
+	float: right;
+}
+.bnavegacion input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+}
+.bnavegacion .buscador button {
+	float: right;
+	padding: 6px 10px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+.bnavegacion .buscador button:hover {
+	background: #ccc;
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.sticky + .content {
+	padding-top: 60px;
+}
+.contenido, .contenido > .producto {
+	padding: 8px;
+}
+.producto {
+	float: left;
+	width: 23%;
+}
+.prodcontenido {
+	background-color: white;
+	padding: 10px;
+	text-align: center;
+}
+.prodcontenido img {
+	max-height: 200px;
+	max-width: 100%;
+	margin: auto;
+}
+.prodcontenido a {
+	text-decoration: none;
+	padding: 10px 25px;
+	border-radius: 12px;
+	background-color: #410042;
+	color: white;
+	margin-bottom: 4px;
+}
+.prodcontenido a:hover {
+	background-color: #0065a1;
+}
+
+@media screen and (max-width: 900px) {
+.producto {
+	width: 50%;
+}
+}
+
+@media screen and (max-width: 600px) {
+.producto {
+	width: 100%;
+}
+}
+
+
